@@ -22,7 +22,7 @@ namespace PlantafelNAV.ViewModel
 
         public MainViewModel()
         {
-          //CurrentView = SimpleIoc.Default.GetInstance<PlantafelVm>();
+         
           BtnPlantafel = new RelayCommand(()=> {CurrentView = SimpleIoc.Default.GetInstance<PlantafelVm>(); });
           BtnMitarbeiter = new RelayCommand(()=> {CurrentView = SimpleIoc.Default.GetInstance<MitarbeiterVm>(); });
         }
