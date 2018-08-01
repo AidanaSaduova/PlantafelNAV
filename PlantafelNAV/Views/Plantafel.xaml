@@ -1,0 +1,92 @@
+﻿<UserControl x:Class="PlantafelNAV.Views.Plantafel"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:PlantafelNAV.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800" 
+              DataContext="{Binding Source={StaticResource Locator}, Path=Plantafel}">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="4*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50" />
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--Headers-->
+        <Label  Content="Produktionsplantafel CarParts" Grid.ColumnSpan="2" FontSize="15" FontWeight="Bold" VerticalAlignment="Center"/>
+
+        <!--Date Combobox-->
+        <StackPanel Margin="5" VerticalAlignment="Center" Orientation="Horizontal" Grid.Row="1">
+            <Label Content="Date:"/>
+            <ComboBox Width="120"/>
+        </StackPanel>
+
+        <!--Arbeitsplätze als Datagrid-->
+        <DataGrid Grid.Row="2" Grid.ColumnSpan="2" Margin="2"/>
+
+        <Grid Grid.Row="3" Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+               
+            </Grid.RowDefinitions>
+
+           
+            <!--AuftragNr-->
+            <StackPanel Orientation="Horizontal">
+                <Label Content="AuftragsNr." FontWeight="Bold" VerticalAlignment="Center"/>
+                <Label VerticalAlignment="Center" FontWeight="Bold"/>
+            </StackPanel>
+            
+            <!--AuftragBeginn-->
+            <StackPanel Orientation="Horizontal" Grid.Row="1">
+                <Label Content="Auftrag Beginn" FontWeight="Bold" VerticalAlignment="Center"/>
+                <ComboBox VerticalAlignment="Center" Margin="5"/>
+            </StackPanel>
+
+           
+
+            <!--Auftrag Dauer-->
+            <StackPanel Orientation="Horizontal" Grid.Row="2">
+                <Label Content="Auftrag Dauer" FontWeight="Bold" VerticalAlignment="Center"/>
+                <ComboBox VerticalAlignment="Center" Margin="5"/>
+                <Label Content="Tage" FontWeight="Bold" VerticalAlignment="Center"/>
+            </StackPanel>
+
+            <!--Mitarbeiter-->
+            <StackPanel Orientation="Horizontal" Grid.Row="3">
+                <Label Content="Mitarbeiter" FontWeight="Bold" VerticalAlignment="Center"/>
+                <ComboBox VerticalAlignment="Center" Margin="5"/>
+            </StackPanel>
+
+            <!--Status-->
+            <StackPanel Orientation="Horizontal" Grid.Column="1">
+                <Label Content="Status" FontWeight="Bold" VerticalAlignment="Center"/>
+                <Ellipse Width="20" Height="20"/>
+            </StackPanel>
+            
+            <!--Mitarbeiter-->
+            <StackPanel Orientation="Horizontal" Grid.Row="3" Grid.Column="1">
+                <Label Content="Zeit von:" FontWeight="Bold" VerticalAlignment="Center"/>
+                <ComboBox VerticalAlignment="Center" Margin="5"/>
+                <Label Content="Zeit bis:" FontWeight="Bold" VerticalAlignment="Center"/>
+                <ComboBox VerticalAlignment="Center" Margin="5"/>
+            </StackPanel>
+
+        </Grid>
+    </Grid>
+</UserControl>
