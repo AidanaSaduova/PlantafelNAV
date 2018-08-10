@@ -8,6 +8,14 @@ namespace PlantafelNAV.ViewModel.Helpers
 {
     public class Mitarbeiter
     {
+        public Mitarbeiter(int iD, string vorname, string nachname, string status)
+        {
+            ID = iD;
+            Vorname = vorname;
+            Nachname = nachname;
+            Status = status;
+        }
+
         public int ID { get; set; }
         public string Vorname { get; set; }
         public string Nachname { get; set; }

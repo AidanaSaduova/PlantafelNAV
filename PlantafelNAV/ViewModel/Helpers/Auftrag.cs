@@ -8,6 +8,19 @@ namespace PlantafelNAV.ViewModel.Helpers
 {
     public class Auftrag
     {
+        public Auftrag(int iD, DateTime beginn, DateTime end, Maschine schmelzofen, Maschine cNCDrehmaschine, Maschine ausrichtestation, Maschine fraesmaschine, Maschine pruefmaschine, string status)
+        {
+            ID = iD;
+            Beginn = beginn;
+            End = end;
+            Schmelzofen = schmelzofen;
+            CNCDrehmaschine = cNCDrehmaschine;
+            Ausrichtestation = ausrichtestation;
+            Fraesmaschine = fraesmaschine;
+            Pruefmaschine = pruefmaschine;
+            Status = status;
+        }
+
         public int ID { get; set; }
         public DateTime Beginn { get; set; }
         public DateTime End { get; set; }
