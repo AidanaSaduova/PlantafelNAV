@@ -76,6 +76,9 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Helpers\Converter\BrushToStatusConverter.cs" />
+    <Compile Include="ViewModel\Helpers\Auftrag.cs" />
+    <Compile Include="ViewModel\Helpers\Maschine.cs" />
+    <Compile Include="ViewModel\Helpers\Mitarbeiter.cs" />
     <Compile Include="ViewModel\MainViewModel.cs" />
     <Compile Include="ViewModel\MitarbeiterVm.cs" />
     <Compile Include="ViewModel\PlantafelVm.cs" />
