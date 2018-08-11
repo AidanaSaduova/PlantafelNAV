@@ -89,15 +89,6 @@
     <Compile Include="Views\Plantafel.xaml.cs">
       <DependentUpon>Plantafel.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Timeline.xaml.cs">
-      <DependentUpon>Timeline.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\TimelineElement.xaml.cs">
-      <DependentUpon>TimelineElement.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\TimelineMark.xaml.cs">
-      <DependentUpon>TimelineMark.xaml</DependentUpon>
-    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -115,18 +106,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\Plantafel.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Views\Timeline.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Views\TimelineElement.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Views\TimelineMark.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
