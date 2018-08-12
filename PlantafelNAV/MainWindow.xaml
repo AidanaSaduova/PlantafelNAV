@@ -48,7 +48,7 @@
         </ContentControl>
 
         <!--Button refresh-->
-        <Button Grid.Row="2" HorizontalAlignment="Right" Width="250" Margin="5" Foreground="White" Command="{Binding BtnPlantafel}">
+        <Button Grid.Row="2" HorizontalAlignment="Right" Width="250" Margin="5" Foreground="White">
             <Grid Width="110">
                 <materialDesign:PackIcon Kind="Refresh" VerticalAlignment="Center"/>
                 <TextBlock Text="Refresh" HorizontalAlignment="Center"/>
