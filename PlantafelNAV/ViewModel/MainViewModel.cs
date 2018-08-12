@@ -7,6 +7,7 @@ namespace PlantafelNAV.ViewModel
    
     public class MainViewModel : ViewModelBase
     {
+        
         private ViewModelBase currentView;
 
         public ViewModelBase CurrentView
@@ -17,12 +18,13 @@ namespace PlantafelNAV.ViewModel
             }
         }
 
+
         public RelayCommand BtnPlantafel { get; set; }
         public RelayCommand BtnMitarbeiter { get; set; }
 
         public MainViewModel()
         {
-         
+         //Buttons to switch between Plantafel and Mitarbeiter views
           BtnPlantafel = new RelayCommand(()=> {CurrentView = SimpleIoc.Default.GetInstance<PlantafelVm>(); });
           BtnMitarbeiter = new RelayCommand(()=> {CurrentView = SimpleIoc.Default.GetInstance<MitarbeiterVm>(); });
         }

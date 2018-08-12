@@ -9,6 +9,9 @@ using System.Windows.Media;
 
 namespace PlantafelNAV.Helpers.Converter
 {
+    /// <summary>
+    /// Converter to get color of current Status, bind with ellipse
+    /// </summary>
     public class BrushToStatusConverter : IValueConverter
     {
         Brush red = new SolidColorBrush(Colors.Red);
