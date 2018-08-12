@@ -9,6 +9,7 @@ namespace PlantafelNAV.ViewModel
     {
         
         private ViewModelBase currentView;
+        //
 
         public ViewModelBase CurrentView
         {
