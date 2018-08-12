@@ -24,11 +24,11 @@
         <Label Grid.Row="1" Content="Dynamics Nav Dev Team" HorizontalAlignment="Left" VerticalAlignment="Center" Height="34" FontSize="15"/>
 
         <!--ListView mit Mitarbeiter info-->
-        <ListView Grid.Row="2" Margin="15,10,12,0" ItemsSource="{Binding Team}" SelectedItem="{Binding SelUser}">
+        <ListView Grid.Row="2" Margin="15,10,12,0" ItemsSource="{Binding Mitarbeiter}" SelectedItem="{Binding SelUser}">
             <ListView.View>
                 <GridView>
-                    <GridViewColumn Header="Vorname" Width="150" DisplayMemberBinding="{Binding Vorname}" />
-                    <GridViewColumn Header="Nachname" Width="150" DisplayMemberBinding="{Binding Nachname}" />
+                    <GridViewColumn Header="Vorname" Width="150" DisplayMemberBinding="{Binding First_Name}" />
+                    <GridViewColumn Header="Nachname" Width="150" DisplayMemberBinding="{Binding Last_Name}" />
                 </GridView>
             </ListView.View>
         </ListView>
